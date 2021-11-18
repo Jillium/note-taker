@@ -1,8 +1,12 @@
 {
- "notes": [   
+  "notes": [
     {
-        "title":"Note Title",
-        "text":"Note Text"
+      "title": "Note Title",
+      "text": "Note Text"
+    },
+    {
+      "Note Title": "Take out garbage",
+      "Note Text": "There is stinky fish inside"
     }
- ]
+  ]
 }
