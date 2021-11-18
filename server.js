@@ -30,15 +30,32 @@ function createNewNote(body, notesArray) {
     );
 
     return body;
-}
+};
+
+function validateNote(note) {
+    if (!note.title || typeof note.title !== 'string') {
+      return false;
+    }
+    if (!note.text || typeof note.text !== 'string') {
+      return false;
+    }
+   
+    return true;
+  }
+
+
 
 app.post('/api/notes', (req, res) => {
     console.log(req.body);
     
+    if (!validateNote(req.body)) {
+        res.status(400).send('The note is not properly formatted. ');
+    } else {
+        const note = createNewNote(req.body, notes)
 
-    const note = createNewNote(req.body, notes)
-
-    res.json(note);
+        res.json(note);
+    }
+    
 })
 
 // app.use(express.static('public'));
