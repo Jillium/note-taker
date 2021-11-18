@@ -11,6 +11,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'));
 
 // gets notes from the db.json file 
 app.get('/api/notes', (req, res) => {
@@ -58,9 +59,21 @@ app.post('/api/notes', (req, res) => {
     
 })
 
-// app.use(express.static('public'));
+
+
+
+
+
+
+
+
 // app.use('/api', apiRoutes);
 // app.use('/', htmlRoutes);
+
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/index.html'))
+})
+
 
 
 app.listen(PORT, () => {
