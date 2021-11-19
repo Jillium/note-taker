@@ -17,8 +17,8 @@
   A front and back end application for coding bootcamp using Express.js. 
 
   
-  <img src = "./public/images/screenshot1.png">
-  <img src = "./public/images/screenshot2.png">
+  <img src = "./public/assets/images/screenshot1.png">
+  <img src = "./public/assets/images/screenshot2.png">
   
   ## Languages Used 
   Javascript,CSS,HTML,Node
