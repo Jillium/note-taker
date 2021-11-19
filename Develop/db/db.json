@@ -2,15 +2,28 @@
   "notes": [
     {
       "title": "note-title",
-      "text": "note-text"
+      "text": "note-text",
+      "id": "1"
     },
     {
       "title": "Learn javascript",
-      "text": "it's just javascript"
+      "text": "it's just javascript",
+      "id": "2"
     },
     {
       "title": "Learn CSS",
-      "text": "Its so pretty"
+      "text": "Its so pretty",
+      "id": "3"
+    },
+    {
+      "title": "Make Dinner",
+      "text": "Spaghetti",
+      "id": "4"
+    },
+    {
+      "title": "Make hot chocolate",
+      "text": "Use the marshmallos",
+      "id": "4"
     }
   ]
 }

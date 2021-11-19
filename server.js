@@ -2,9 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const { notes } = require('./Develop/db/db.json');
-// const apiRoutes = require('./routes/apiRoutes');
-// const htmlRoutes = require('./routes/htmlRoutes');
-
 
 const PORT = process.env.PORT || 3003;
 const app = express();
@@ -50,6 +47,7 @@ function validateNote(note) {
 
 app.post('/api/notes', (req, res) => {
     console.log(req.body);
+    req.body.id = notes.length.toString();
     
     if (!validateNote(req.body)) {
         res.status(400).send('The note is not properly formatted. ');
@@ -61,16 +59,6 @@ app.post('/api/notes', (req, res) => {
     
 })
 
-
-
-
-
-
-
-
-
-// app.use('/api', apiRoutes);
-// app.use('/', htmlRoutes);
 
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, './public/index.html'))
