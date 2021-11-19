@@ -19,6 +19,9 @@
   
   <img src = "./public/assets/images/screenshot1.png">
   <img src = "./public/assets/images/screenshot2.png">
+
+  View a live demo 
+  https://ancient-everglades-97811.herokuapp.com/
   
   ## Languages Used 
   Javascript,CSS,HTML,Node
