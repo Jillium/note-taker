@@ -11,12 +11,14 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // gets notes from the db.json file 
 app.get('/api/notes', (req, res) => {
     res.json(notes);
 })
+
+
 
 function createNewNote(body, notesArray) {
     
@@ -74,6 +76,9 @@ app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, './Develop/public/index.html'))
 })
 
+app.get('/notes', (req,res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/notes.html'))
+})
 
 
 app.listen(PORT, () => {
