@@ -6,23 +6,23 @@
       "id": "1"
     },
     {
-      "title": "Learn javascript",
-      "text": "it's just javascript",
+      "title": "Learn Javascript",
+      "text": "It's just javascript",
+      "id": "1"
+    },
+    {
+      "title": "Balance bank account",
+      "text": "Pay credit card bill",
       "id": "2"
     },
     {
-      "title": "Learn CSS",
-      "text": "Its so pretty",
+      "title": "Grocery Shopping",
+      "text": "Buy bread",
       "id": "3"
     },
     {
-      "title": "Make Dinner",
-      "text": "Spaghetti",
-      "id": "4"
-    },
-    {
-      "title": "Make hot chocolate",
-      "text": "Use the marshmallos",
+      "title": "Start module 12",
+      "text": "SQL",
       "id": "4"
     }
   ]
